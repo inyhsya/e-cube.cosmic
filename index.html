@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Cube</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">E-<span>CUBE</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#produk">Produk</a>
+        <a href="#product">Produk Unggulan Kami</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form End -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product/pupukc.jpg" alt="PupukC" />
+          <div class="item-detail">
+            <h3>Pupuk Cair 250 ml</h3>
+            <div class="item-price">Rp13.000,00</div>
+          </div>
+          <div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="img/product/set.jpeg" alt="Set" />
+          <div class="item-detail">
+            <h3>1 Set Rangkaian</h3>
+            <div class="item-price">Rp480.000,00</div>
+          </div>
+          <div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Shopping Cart End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Sections Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Welcome to E-CUBE!</h1>
+        <p>
+          E-CUBE merupakan sebuah sarana untuk memamerkan hasil karya kami yang
+          juga diperjualbelikan dalam bentuk bahan baku hingga hasil akhir.
+          Website ini diharapkan dapat membantu khalayak dalam mengikuti
+          perkembangan teknologi masa kini.
+        </p>
+        <a href="#" class="cta">Beli Sekarang!</a>
+      </main>
+    </section>
+    <!-- Hero Sections End -->
+
+    <!-- About Sections Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/about.jpeg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Get to Know Us!</h3>
+          <p>
+            COSMIC - Clique Of C1, the enthusiaStic people of inforMatic &
+            economIC.
+          </p>
+          <p>
+            COSMIC merupakan sebuah tim yang ada pada sekolah favorit di
+            Kabupaten Bondowoso, SMA Negeri 2 Bondowoso yang mempunyai
+            antusiasme tinggi dalam bidang informatika dan ekonomi.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Sections End -->
+
+    <!--Produk Sections Start-->
+    <section id="produk" class="produk" x-data="'produk">
+      <h2>Produk <span>Kami</span></h2>
+      <p>100% orisinal buatan tim COSMIC</p>
+
+      <div class="row">
+        <div class="produk-card">
+          <img src="img/produk/em4.jpg" alt="EM4" class="produk-card-img" />
+          <h3 class="produk-card-title">EM4 250 ml</h3>
+          <p class="produk-card-price">Rp10.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/aktivator.jpg"
+            alt="Aktivator"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Activator Komposter 250ml</h3>
+          <p class="produk-card-price">Rp15.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/pupukc.jpg"
+            alt="PupukC"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Pupuk Cair 250 ml</h3>
+          <p class="produk-card-price">Rp15.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/pupukk.jpg"
+            alt="PupukK"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Pupuk Kering 500 gram</h3>
+          <p class="produk-card-price">Rp10.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/cabe.jpeg"
+            alt="BibitC"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Bibit Cabai</h3>
+          <p class="produk-card-price">Rp1.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/tomat.jpeg"
+            alt="BibitT"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Bibit Tomat</h3>
+          <p class="produk-card-price">Rp1.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/kubis.jpeg"
+            alt="BibitK"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Bibit Kubis</h3>
+          <p class="produk-card-price">Rp2.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/komposter.jpeg"
+            alt="Komposter"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Komposter Pupuk</h3>
+          <p class="produk-card-price">Rp20.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/penjernih.jpeg"
+            alt="Penjernih"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Penjernih Air</h3>
+          <p class="produk-card-price">Rp100.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/penyiram.jpg"
+            alt="Penyiram"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Penyiram Tanaman Otomatis</h3>
+          <p class="produk-card-price">Rp200.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img src="img/produk/set.jpeg" alt="Set" class="produk-card-img" />
+          <h3 class="produk-card-title">1 Set Rangkaian</h3>
+          <p class="produk-card-price">Rp500.000,00</p>
+        </div>
+
+        <div class="produk-card">
+          <img
+            src="img/produk/tempat.jpg"
+            alt="Tempat"
+            class="produk-card-img"
+          />
+          <h3 class="produk-card-title">Tempat Sampah Penggiling</h3>
+          <p class="produk-card-price">Rp300.000,00</p>
+        </div>
+      </div>
+    </section>
+    <!--Produk Sections End-->
+
+    <!-- Product Sections Start -->
+    <section id="product" class="product">
+      <h2>Produk Unggulan<span> Kami</span></h2>
+      <p>Tersedia banyak diskon pada produk kami!</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/pupukc.jpg" alt="PupukC" />
+          </div>
+          <div class="product-content">
+            <h3>Pupuk Cair 250 ml</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">Rp13.000,00 <span>Rp15.000,00</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/pupukc.jpg" alt="PupukK" />
+          </div>
+          <div class="product-content">
+            <h3>Pupuk Kering 500 gram</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">Rp9.000,00 <span>Rp10.000,00</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/penjernih.jpeg" alt="Penjernih" />
+          </div>
+          <div class="product-content">
+            <h3>Penjernih Air</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">Rp90.000,00 <span>Rp100.000,00</span></div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/penyiram.jpg" alt="Penyiram" />
+          </div>
+          <div class="product-content">
+            <h3>Penyiram Tanaman Otomatis</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">
+            Rp180.000,00 <span>Rp200.000,00</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/set.jpeg" alt="Set" />
+          </div>
+          <div class="product-content">
+            <h3>1 Set Rangkaian</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">
+            Rp480.000,00 <span>Rp500.000,00</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/tempat.jpg" alt="Tempat" />
+          </div>
+          <div class="product-content">
+            <h3>Tempat Sampah Penggiling</h3>
+          </div>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">Rp300.000,00</div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Sections End -->
+
+    <!-- Kontak Sections Start -->
+    <section id="contact" class="contact">
+      <h2>Kontak <span>Kami</span></h2>
+      <p>Reach Us Here</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.7414388620564!2d113.81707377412283!3d-7.922053178868105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6dcdae69f9f81%3A0xe7358efaedf2a432!2sSMA%20Negeri%202%20Bondowoso!5e0!3m2!1sid!2sid!4v1717988570904!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="Nomor Telepon" />
+          </div>
+
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Sections End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="mail"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#produk">Produk</a>
+        <a href="#product">Produk Unggulan Kami</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">COSMIC SMADA</a></p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Modal Box Item Detail Start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/produk/set.jpeg" alt="Set" />
+          <div class="product-content">
+            <h3>Penjernih Air</h3>
+            <p>
+              Sebuah penjernih air yang terdiri atas beberapa lapisan yaitu tisu
+              dan kapas, pasir, batu kerikil, batu, karbon aktif, dan arang
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">
+              Rp90.000,00 <span>Rp100.000,00</span>
+            </div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> Masukkan ke Keranjang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box Item Detail End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
